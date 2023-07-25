@@ -34,7 +34,7 @@
           extend: {
             colors: {
               "primary-color": "#121212 ",
-              "secondary-color": "#12121299 ",
+              "color-muted": "#12121299 ",
               "danger-color": "#F85559",
               "danger-light": "#B68C5A",
             },
@@ -106,7 +106,7 @@
             <div class="carousel w-full">
                 <!-- slider-item-1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                <div class="hero min-h-[500px]" style="background-image: url('images/banner1.png');">
+                <div class="hero min-h-[550px]" style="background-image: url('images/banner1.png');">
                     <div class="hero-overlay bg-black bg-opacity-60"></div>
                     <div class="hero-content text-center  text-neutral-content">
                     <div class="max-w-2xl">
@@ -176,31 +176,225 @@
             </div>
        </div>
     <!-- hero-banner-bottom -->
-   <div class="-mt-24 z-50 relative hidden lg:block">
-    <div class="rounded-lg hero-bottom-banner flex justify-between bg-white max-w-5xl mx-auto text-center p-8">
+   <div class="-mt-20 z-50 relative hidden lg:block ">
+    <div class="rounded-lg hero-bottom-banner flex justify-between bg-white max-w-5xl mx-auto text-center p-8 shadow">
         <div>
-            <img class="w-24 h-24" src="images/fruit1.png" alt="">
+            <img class="w-20 h-20" src="images/fruit1.png" alt="">
             <p>Strawberry</p>
         </div>
         <div>
-            <img class="w-24 h-24" src="images/fruit2.png" alt="">
+            <img class="w-20 h-20" src="images/fruit2.png" alt="">
             <p>Orange</p>
         </div>
         <div>
-            <img class="w-24 h-24" src="images/fruit3.png" alt="">
+            <img class="w-20 h-20" src="images/fruit3.png" alt="">
             <p>Mango</p>
         </div>
         <div>
-            <img class="w-24 h-24" src="images/fruit4.png" alt="">
+            <img class="w-20 h-20" src="images/fruit4.png" alt="">
             <p>Strawberry</p>
         </div>
         <div>
-            <img class="w-24 h-24" src="images/fruit5.png" alt="">
+            <img class="w-20 h-20" src="images/fruit5.png" alt="">
             <p>Pomegranate</p>
         </div>
     </div>
    </div>
     </header>
-   
+
+    <!-- main section -->
+   <main class="container mx-auto px-4">
+        <!-- Deal the day section -->
+        <section class="my-20">
+            <div class="day-discount-count flex flex-col md:flex-row   justify-center md:justify-between items-center md:text-left text-center ">
+                <div class="max-w-xl">
+                    <h2 class="text-primay-color text-5xl font-extrabold">Deal of the day</h2>
+                    <p class="text-color-muted my-5 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="md:max-w-xl px-5">
+                    <div class="flex gap-3 justify-center items-center text-center">
+                        <div class="flex flex-col justify-center items-center">
+                          <span class="countdown">
+                            <span class="text-xm  md:text-5xl text-primary-color font-extrabold" style="--value:15;">
+                            </span>
+                           
+                          </span>
+                          Days
+                        </div> 
+                        <i class='bx bx-dots-vertical-rounded text-2xl mt-2 font-normal text-[#121212] '></i>
+                        <div class="flex flex-col justify-center items-center">
+                          <span class="countdown ">
+                            <span class="text-md md:text-5xl text-primary-color font-extrabold" style="--value:10;"></span>
+                          </span>
+                          Hours
+                        </div> 
+                        <i class='bx bx-dots-vertical-rounded text-2xl mt-2 font-normal text-[#121212]'></i>
+
+                        <div class="flex flex-col justify-center items-center">
+                          <span class="countdown ">
+                            <span class=" text-md md:text-5xl text-primary-color font-extrabold" style="--value:24;"></span>
+                          </span>
+                          Minutes
+                        </div> 
+
+                        <i class='bx bx-dots-vertical-rounded text-2xl mt-2 font-normal text-[#121212]'></i>
+
+                        <div class="flex flex-col justify-center items-center">
+                          <span class="countdown  ">
+                            <span class="text-md md:text-5xl text-primary-color font-extrabold" style="--value:39;"></span>
+                           
+                          </span>
+                          Seconds
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- discount products -->
+            <div class="products mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                <div class="card border-2">
+                    <div class="card-body items-center text-center px-10 py-5">
+                        <figure class="px-10 pt-10 mb-8">
+                            <img  class="w-24 h-28" src="images/fruit6.png" alt="Shoes" />
+                          </figure>
+                          
+                            <h2 class="text-primary-color text-xl font-semibold">12.90$ - 18.85$</h2>
+                            <hr class="w-full h-2 my-3">
+                           <h3 class="text-color-muted font-medium">Apples</h3>
+                     <div class="rating flex gap-1 text-2xl py-3">
+                      <i class='bx bxs-star text-danger-color' ></i>
+                      <i class='bx bxs-star-half text-danger-color' ></i>
+                      <i class='bx bxs-star text-danger-light' ></i>
+                      <i class='bx bxs-star text-danger-light' ></i>
+                      <i class='bx bxs-star text-danger-light' ></i>
+                     </div>
+                     <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                    </div>
+                  </div>
+                <div class="card border-2">
+                    <div class="card-body items-center text-center px-10 py-5">
+                        <figure class="px-10 pt-10 mb-8">
+                            <img class="w-24 h-28" src="images/fruit7.png" alt="Shoes" />
+                          </figure>
+                          <h2 class="text-primary-color text-xl font-semibold">12.90$ - 18.85$</h2>
+                          <hr class="w-full h-2 my-3">
+                         <h3 class="text-color-muted font-medium">Apples</h3>
+
+                          <div class="rating flex gap-1 text-2xl py-3">
+                           <i class='bx bxs-star text-danger-color' ></i>
+                           <i class='bx bxs-star-half text-danger-color' ></i>
+                           <i class='bx bxs-star text-danger-light' ></i>
+                           <i class='bx bxs-star text-danger-light' ></i>
+                           <i class='bx bxs-star text-danger-light' ></i>
+                          </div>
+                          <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                    </div>
+                  </div>
+                <div class="card border-2">
+                    <div class="card-body items-center text-center px-10 py-5">
+                        <figure class="px-10 pt-10 mb-8">
+                            <img class="w-24 h-28" src="images/fruit8.png" alt="Shoes" />
+                          </figure>
+                          <h2 class="text-primary-color text-xl font-semibold">12.90$ - 18.85$</h2>
+                            <hr class="w-full h-2 my-3">
+                           <h3 class="text-color-muted font-medium">Apples</h3>
+
+                          <div class="rating flex gap-1 text-2xl py-3">
+                           <i class='bx bxs-star text-danger-color' ></i>
+                           <i class='bx bxs-star-half text-danger-color' ></i>
+                           <i class='bx bxs-star text-danger-light' ></i>
+                           <i class='bx bxs-star text-danger-light' ></i>
+                           <i class='bx bxs-star text-danger-light' ></i>
+                          </div>
+                          <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                    </div>
+                  </div>
+                <div class="card border-2">
+                    <div class="card-body items-center text-center px-10 py-5">
+                        <figure class="px-10 pt-10 mb-8">
+                            <img class="w-24 h-28" src="images/fruit9.png" alt="Shoes" />
+                          </figure>
+                       <h2 class="text-primary-color text-xl font-semibold">12.90$ - 18.85$</h2>
+                            <hr class="w-full h-2 my-3">
+                           <h3 class="text-color-muted font-medium">Apples</h3>
+
+                     <div class="rating flex gap-1 text-2xl py-3">
+                      <i class='bx bxs-star text-danger-color' ></i>
+                      <i class='bx bxs-star-half text-danger-color' ></i>
+                      <i class='bx bxs-star text-danger-light' ></i>
+                      <i class='bx bxs-star text-danger-light' ></i>
+                      <i class='bx bxs-star text-danger-light' ></i>
+                     </div>
+                     <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                    </div>
+                  </div>
+            </div>
+            <div class="text-center my-10">
+              <button class="btn bg-danger-color border-0 text-white rounded-lg">Shop Now</button>
+            </div>
+        </section>
+        <!-- team section -->
+        <section class="team-section my-20 ">
+          <div class="hero min-h-[600px]" style="background-image: url('images/banner1.png');">
+            <div class="hero-overlay bg-black bg-opacity-80"></div>
+            <div class="hero-content text-center text-neutral-content flex-col">
+              <div class="team-section max-w-xl mx-auto pt-16 lg:pt-0">
+                <h2 class="text-white text-4xl font-extrabold">Meet the team section</h2>
+                <p class="text-white font-medium text-sm my-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              </div>
+              <!-- team container -->
+              <div class="team-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 my-8 justify-between items-center ">
+                <div class="flex flex-col justify-center items-center">
+                  <img class="w-28" src="images/member1.png" alt="">
+                  <div class="mt-6">
+                    <h3 class="text-white text-xl font-semibold">Awlad Hossain</h3>
+                    <span class="text-sm">Fruits Expert</span>
+                    <div class="flex justify-center items-center gap-3 mt-3">
+                      <i class='bx bxl-facebook p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-twitter p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-linkedin p-1 bg-danger-color rounded-full'></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <img class="w-28" src="images/member2.png" alt="">
+                  <div class="mt-6">
+                    <h3 class="text-white text-xl font-semibold">Safia Chowdhury</h3>
+                    <span class="text-sm">Fruits Expert</span>
+                    <div class="flex justify-center items-center gap-3 mt-3">
+                      <i class='bx bxl-facebook p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-twitter p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-linkedin p-1 bg-danger-color rounded-full'></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <img class="w-28" src="images/member3.png" alt="">
+                  <div class="mt-6">
+                    <h3 class="text-white text-xl font-semibold">Safia Chowdhury</h3>
+                    <span class="text-sm">Rokib Hossain</span>
+                    <div class="flex justify-center items-center gap-3 mt-3">
+                      <i class='bx bxl-facebook p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-twitter p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-linkedin p-1 bg-danger-color rounded-full'></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <img class="w-28" src="images/member4.png" alt="">
+                  <div class="mt-6">
+                    <h3 class="text-white text-xl font-semibold">Chaity Chaplin</h3>
+                    <span class="text-sm">Fruits Expert</span>
+                    <div class="flex justify-center items-center gap-3 mt-3">
+                      <i class='bx bxl-facebook p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-twitter p-1 bg-danger-color rounded-full'></i>
+                      <i class='bx bxl-linkedin p-1 bg-danger-color rounded-full'></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+   </main>
   </body>
 </html>
