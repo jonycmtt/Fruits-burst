@@ -214,21 +214,21 @@
               <div class="md:max-w-xl px-5">
                   <div class="flex gap-0 md:gap-3 justify-center items-center text-center">
                       <div class="flex flex-col justify-center items-center">
-                        <span class="countdown">
+                        <span class="countdown text-sm md:text-4xl">
                           <span class="text-xm  md:text-5xl text-primary-color font-extrabold" style="--value:15;">
                           </span>
                          
                         </span>
                         Days
                       </div> 
-                      <i class='bx bx-dots-vertical-rounded text-2xl mt-2 font-normal text-[#121212] '></i>
+                      <i class='bx bx-dots-vertical-rounded text-2xl -mt-5 font-normal text-[#121212] '></i>
                       <div class="flex flex-col justify-center items-center">
                         <span class="countdown ">
                           <span class="text-md md:text-5xl text-primary-color font-extrabold" style="--value:10;"></span>
                         </span>
                         Hours
                       </div> 
-                      <i class='bx bx-dots-vertical-rounded text-2xl mt-2 font-normal text-[#121212]'></i>
+                      <i class='bx bx-dots-vertical-rounded text-2xl -mt-5 font-normal text-[#121212]'></i>
 
                       <div class="flex flex-col justify-center items-center">
                         <span class="countdown ">
@@ -237,7 +237,7 @@
                         Minutes
                       </div> 
 
-                      <i class='bx bx-dots-vertical-rounded text-2xl mt-2 font-normal text-[#121212]'></i>
+                      <i class='bx bx-dots-vertical-rounded text-2xl -mt-5 font-normal text-[#121212]'></i>
 
                       <div class="flex flex-col justify-center items-center">
                         <span class="countdown  ">
@@ -267,7 +267,7 @@
                     <i class='bx bxs-star text-danger-light' ></i>
                     <i class='bx bxs-star text-danger-light' ></i>
                    </div>
-                   <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                   <h3 onclick="my_modal_1.showModal()" class="text-danger-color text-lg font-semibold pb-2 cursor-pointer">Details</h3>
                   </div>
                 </div>
               <div class="card border-2">
@@ -286,7 +286,7 @@
                          <i class='bx bxs-star text-danger-light' ></i>
                          <i class='bx bxs-star text-danger-light' ></i>
                         </div>
-                        <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                        <h3 onclick="my_modal_2.showModal()" class="text-danger-color text-lg font-semibold pb-2 cursor-pointer">Details</h3>
                   </div>
                 </div>
               <div class="card border-2">
@@ -305,7 +305,7 @@
                          <i class='bx bxs-star text-danger-light' ></i>
                          <i class='bx bxs-star text-danger-light' ></i>
                         </div>
-                        <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                        <h3 onclick="my_modal_3.showModal()" class="text-danger-color text-lg font-semibold pb-2 cursor-pointer">Details</h3>
                   </div>
                 </div>
               <div class="card border-2">
@@ -324,7 +324,7 @@
                     <i class='bx bxs-star text-danger-light' ></i>
                     <i class='bx bxs-star text-danger-light' ></i>
                    </div>
-                   <h3 class="text-danger-color text-lg font-semibold pb-2">Details</h3>
+                   <h3 onclick="my_modal_4.showModal()" class="text-danger-color text-lg font-semibold pb-2 cursor-pointer">Details</h3>
                   </div>
                 </div>
           </div>
@@ -428,7 +428,7 @@
                 </div>
                 <div>
                   <h2 class="text-primary-color text-xl font-bold">Fresh is Best</h2>
-                  <hr class="w-1/3 h-[3px] my-3 bg-color-muted mx-auto md:ml-0"/>
+                  <hr class="w-1/3 h-[2px] my-3 bg-color-muted mx-auto md:ml-0"/>
                   <p class="text-color-muted leading-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
               </div>
@@ -508,7 +508,7 @@
              <div class="flex flex-col text-center items-center md:items-start md:text-right md:flex-row  gap-5 px-16 md:px-0">
               <div class="order-2 md:order-none">
                 <h2 class="text-primary-color text-xl font-bold">Sustainable Practice</h2>
-                <hr class="w-1/3 h-[3px] my-3 bg-color-muted mx-auto md:mr-0"/>
+                <hr class="w-1/3 h-[2px] my-3 bg-color-muted mx-auto md:mr-0"/>
                 <p class="text-color-muted leading-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
                <div class="mt-4 order-1 md:order-none">
@@ -545,6 +545,135 @@
            </div>
           </div>
         </section>
+        <!-- modal section -->
+        <!-- modal 01 -->
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box">
+            <div class="card">
+              <div class="card-body items-center text-center">
+                  <figure class="mb-8">
+                      <img  class="w-24 h-28" src="images/fruit6.png" alt="Shoes" />
+                    </figure>
+                    
+                      <h2 class="text-primary-color text-3xl font-semibold">Apple</h2>
+                      <p class="text-color-muted text-sm py-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+               <div class="rating flex gap-1 text-2xl py-3 cursor-pointer">
+                <i class='bx bxs-star text-danger-color' ></i>
+                <i class='bx bxs-star-half text-danger-color' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+               </div>
+          
+             
+              <div class="modal-action gap-3">
+                <button class="btn outline-none bg-transparent border-2 border-danger-color text-danger-color rounded">Close</button>
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-danger-color border-0 text-white rounded-lg">Shop Now</button>
+              </div>
+           
+                
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <!-- modal 02 -->
+        <dialog id="my_modal_2" class="modal">
+          <form method="dialog" class="modal-box">
+            <div class="card">
+              <div class="card-body items-center text-center">
+                  <figure class="mb-8">
+                      <img  class="w-24 h-28" src="images/fruit7.png" alt="Shoes" />
+                    </figure>
+                    
+                      <h2 class="text-primary-color text-3xl font-semibold">Apple</h2>
+                      <p class="text-color-muted text-sm py-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+               <div class="rating flex gap-1 text-2xl py-3 cursor-pointer">
+                <i class='bx bxs-star text-danger-color' ></i>
+                <i class='bx bxs-star-half text-danger-color' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+               </div>
+          
+             
+              <div class="modal-action gap-3">
+                <button class="btn outline-none bg-transparent border-2 border-danger-color text-danger-color rounded">Close</button>
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-danger-color border-0 text-white rounded-lg">Shop Now</button>
+              </div>
+           
+                
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <!-- modal 03 -->
+        <dialog id="my_modal_3" class="modal">
+          <form method="dialog" class="modal-box">
+            <div class="card">
+              <div class="card-body items-center text-center">
+                  <figure class="mb-8">
+                      <img  class="w-24 h-28" src="images/fruit8.png" alt="Shoes" />
+                    </figure>
+                    
+                      <h2 class="text-primary-color text-3xl font-semibold">Apple</h2>
+                      <p class="text-color-muted text-sm py-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+               <div class="rating flex gap-1 text-2xl py-3 cursor-pointer">
+                <i class='bx bxs-star text-danger-color' ></i>
+                <i class='bx bxs-star-half text-danger-color' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+               </div>
+          
+             
+              <div class="modal-action gap-3">
+                <button class="btn outline-none bg-transparent border-2 border-danger-color text-danger-color rounded">Close</button>
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-danger-color border-0 text-white rounded-lg">Shop Now</button>
+              </div>
+           
+                
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <!-- modal 03 -->
+        <dialog id="my_modal_4" class="modal">
+          <form method="dialog" class="modal-box">
+            <div class="card">
+              <div class="card-body items-center text-center">
+                  <figure class="mb-8">
+                      <img  class="w-24 h-28" src="images/fruit9.png" alt="Shoes" />
+                    </figure>
+                    
+                      <h2 class="text-primary-color text-3xl font-semibold">Apple</h2>
+                      <p class="text-color-muted text-sm py-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+               <div class="rating flex gap-1 text-2xl py-3 cursor-pointer">
+                <i class='bx bxs-star text-danger-color' ></i>
+                <i class='bx bxs-star-half text-danger-color' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+                <i class='bx bxs-star text-danger-light' ></i>
+               </div>
+          
+             
+              <div class="modal-action gap-3">
+                <button class="btn outline-none bg-transparent border-2 border-danger-color text-danger-color rounded">Close</button>
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-danger-color border-0 text-white rounded-lg">Shop Now</button>
+              </div>
+           
+                
+              </div>
+            </div>
+          </form>
+        </dialog>
    </main>
    <!-- footer section  -->
    <footer class=" bg-primary-color py-24 mt-32 px-10">
