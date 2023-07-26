@@ -48,7 +48,7 @@
   <body>
     <!-- header section  -->
     <header class="container mx-auto relative">
-      <nav class="sm:bg-danger-color rounded-full my-6">
+      <nav class="sm:bg-danger-color rounded-full mt-6 sm:my-6 pr-3">
         <div class="navbar">
           <div class="navbar-start hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-white text-lg font-medium">
@@ -63,8 +63,8 @@
                 <img class="w-10" src="images/logo.png" alt="" />
                 <span class="text-black sm:text-white font-semibold">Fruit Burst</span>
               </a>
-            <div class="dropdown  ">
-              <label tabindex="0" class="btn btn-ghost lg:hidden text-black">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden text-black sm:text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -88,6 +88,14 @@
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
+              <li>
+                <div class="flex flex-1">
+                  <form class="relative w-full">
+                    <input class="input w-full" type="text" placeholder="Search here" />
+                    <i class="bx bx-search text-2xl absolute right-3 top-2 cursor-pointer"></i>
+                  </form>
+                </div>
+              </li>
             </ul>
               </ul>
             </div>
