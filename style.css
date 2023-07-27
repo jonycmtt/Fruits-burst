@@ -4,3 +4,10 @@ body {
 .navbar-start {
   width: 42%;
 }
+
+/* custom media screens */
+/* @media screen and (max-width: 640px) {
+  .btn {
+    margin: 20px -10px;
+  }
+} */
